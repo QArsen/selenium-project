@@ -1,0 +1,11 @@
+### Java ###
+*.class
+
+### InteliJ ###
+/.idea/
+
+### test results ###
+/test-output/
+
+### Complied assets ###
+/target/

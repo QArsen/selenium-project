@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Milk products customer list Test">
+
+    <test name="Milk products customer list Test">
+        <parameter name="test" value="full test"/>
+        <classes>
+            <class name="MilkProductsCustomListPageTest.MilkProductsCustomListPageTest" > </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cart Page Tests">
+
+    <test name="Cart Page Test">
+        <parameter name="test" value="final test"/>
+        <classes>
+            <class name="CartPageTest.CartPageTest" > </class>
+        </classes>
+    </test>
+</suite>
