@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,7 +24,6 @@ public class BaseClass {
 
     public static WebDriver driver;
     public static Properties prop;
-
 
 
     public BaseClass() {
@@ -48,15 +48,20 @@ public class BaseClass {
                 driver = new ChromeDriver();
                 manageDriver();
             } else {
-                if (prop.getProperty("browser").equalsIgnoreCase("FF")) {
+                if (prop.getProperty("browser").equalsIgnoreCase("ff")) {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     manageDriver();
+                } else {
+                    if (prop.getProperty("browser").equalsIgnoreCase("ed")) {
+                        WebDriverManager.edgedriver().setup();
+                        driver = new EdgeDriver();
+                        manageDriver();
+                    }
                 }
             }
         }
     }
-
 
 
     private void manageDriver() {
