@@ -3,15 +3,13 @@ package Pages.MilkProductsCustomListPage;
 import Base.BaseClass;
 import Base.Elements;
 import org.openqa.selenium.*;
+
 import java.util.*;
 
 public class MilkProductsCustomListPage extends BaseClass {
 
-
-
     public void clickOnRelevanceFilterButton() {
-        WebElement element = waitForElementIsPresent(Elements.relevance_filter_button);
-        element.click();
+        waitForElementIsPresent(Elements.relevance_filter_button).click();
     }
 
     // doesn`t work properly(After milk selection I get all the products - not milk,  according to price filter)
@@ -36,9 +34,7 @@ public class MilkProductsCustomListPage extends BaseClass {
 
     // After this button on clicking,  vodka (halavi) and body milk disappear from milk list :)
     public void clickOnListButton() {
-        //WebElement element =
         waitForElementIsPresent(Elements.list_button).click();
-        //element.click();
     }
 
     public void findYourCheapestMilkInListAndClickOnIt() {
@@ -74,6 +70,7 @@ public class MilkProductsCustomListPage extends BaseClass {
                         }
                     }
                 }
+                break;
             }
         }
     }
@@ -89,7 +86,6 @@ public class MilkProductsCustomListPage extends BaseClass {
         WebElement element = waitForElementIsPresent(Elements.close_add_to_cart_button);
         js.executeScript("arguments[0].click();", element);
     }
-
 
     // In the Map I search lowest price
     public Double findSmallest(Map<String, Double> map) {

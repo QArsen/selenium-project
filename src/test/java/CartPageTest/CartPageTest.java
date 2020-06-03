@@ -5,7 +5,6 @@ import Pages.CartPage.CartPage;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
 public class CartPageTest extends BaseClass {

@@ -29,12 +29,10 @@ public class LoginPage extends BaseClass {
     }
 
     public String verifyLoggedInUserName() {
-        String user = waitForElementIsPresent(Elements.user_name).getText().trim();
-        return user;
+        return waitForElementIsPresent(Elements.user_name).getText().trim();
     }
 
     public String verifyPageLogo() {
-        String user = waitForElementIsPresent(Elements.page_logo).getText().trim();
-        return user;
+        return waitForElementIsPresent(Elements.page_logo).getText().trim();
     }
 }

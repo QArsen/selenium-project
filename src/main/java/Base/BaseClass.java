@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -41,7 +42,7 @@ public class BaseClass {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (prop.getProperty("browser").equalsIgnoreCase("CH")) {
+            if (prop.getProperty("browser").equalsIgnoreCase("ch")) {
                 WebDriverManager.chromedriver().setup();
                 System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                 driver = new ChromeDriver();
@@ -79,6 +80,7 @@ public class BaseClass {
 
     public WebElement waitForElementIsPresent(WebElement element) {
         WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, 10)
+                .pollingEvery(Duration.ofMillis(200))
                 .ignoring(StaleElementReferenceException.class);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }

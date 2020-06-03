@@ -1,12 +1,9 @@
 package SearchMilkPageTest;
 
 import Base.BaseClass;
-
-
 import Pages.SearchMilkPage.SearchMilkPage;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
 
@@ -41,15 +38,13 @@ public class SearchMilkPageTest extends BaseClass {
     }
 
     // Each step has own test
-
     @Test(priority = 1)
     public void searchMilkInSearchField() {
         searchMilkAndAddToCartPage.searchMilkInSearchField("חלב טרי");
     }
 
     @Test(priority = 2)
-    public void clickOnToAllResultsLink() throws InterruptedException {
+    public void clickOnToAllResultsLink() {
         searchMilkAndAddToCartPage.clickOnToAllResultsLink();
     }
-
 }

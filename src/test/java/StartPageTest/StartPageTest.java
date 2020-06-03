@@ -2,7 +2,6 @@ package StartPageTest;
 
 import Base.BaseClass;
 import Pages.StratPage.StartPage;
-import org.openqa.selenium.support.CacheLookup;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -20,7 +19,7 @@ public class StartPageTest extends BaseClass {
     }
 
     @BeforeClass
-    public void run() throws MalformedURLException {
+    public void run()  {
         driverInitialization();
         startPage = new StartPage();
     }
@@ -45,6 +44,5 @@ public class StartPageTest extends BaseClass {
     public void verifyPageTitle() {
         Assert.assertTrue(startPage.verifyPageTitle(), prop.getProperty("start_page_title"));
     }
-
 
 }

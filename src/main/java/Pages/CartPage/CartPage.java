@@ -9,20 +9,17 @@ public class CartPage  extends BaseClass {
 
     // Here I get delivery price -> double
     public double getDeliveryPriceFromCart(){
-       double  price  = getPriceFromCart(waitForElementIsPresent(Elements.delivery_price));
-       return price ;
+        return getPriceFromCart(waitForElementIsPresent(Elements.delivery_price));
     }
 
     // Here I get milk price -> double
     public double  getMilkPriceFromCart(){
-        double price  = getPriceFromCart(waitForElementIsPresent(Elements.milk_price));
-        return  price;
+        return getPriceFromCart(waitForElementIsPresent(Elements.milk_price));
     }
 
     // Here I get total price (milk + delivery) -> double
     public double getTotalPriceFromCart(){
-        double  price  = getPriceFromCart(waitForElementIsPresent(Elements.total_price));
-        return price;
+        return getPriceFromCart(waitForElementIsPresent(Elements.total_price));
     }
 
     //Parsing String to double
@@ -36,5 +33,4 @@ public class CartPage  extends BaseClass {
     public void removeProductFromCart(){
         waitForElementIsPresent(Elements.remove_product).click();
     }
-
 }

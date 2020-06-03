@@ -4,7 +4,6 @@ import Base.BaseClass;
 import Pages.MilkProductsCustomListPage.MilkProductsCustomListPage;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
 import java.io.IOException;
 
 public class MilkProductsCustomListPageTest extends BaseClass {
