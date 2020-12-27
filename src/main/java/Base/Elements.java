@@ -14,13 +14,6 @@ public class Elements {
     @FindBy(id = "loginDropdownContainer")
     public static WebElement login_link;
 
-    @FindBy(id = "j_username")
-    public static WebElement userName_field;
-
-    @FindBy(id = "j_password")
-    public static WebElement password_field;
-
-
     @FindAll({
             @FindBy(how = How.ID, using = "j_username"),
             @FindBy(how = How.ID, using = "j_password")
