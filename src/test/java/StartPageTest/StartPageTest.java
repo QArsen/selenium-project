@@ -5,6 +5,7 @@ import Pages.StratPage.StartPage;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -44,5 +45,4 @@ public class StartPageTest extends BaseClass {
     public void verifyPageTitle() {
         Assert.assertTrue(startPage.verifyPageTitle(), prop.getProperty("start_page_title"));
     }
-
 }

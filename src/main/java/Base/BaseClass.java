@@ -84,11 +84,13 @@ public class BaseClass {
     }
 
     public WebElement waitForElementIsPresent(WebElement element) {
-        WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, 10)
+        WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, 15)
                 .pollingEvery(Duration.ofMillis(200))
                 .ignoring(StaleElementReferenceException.class);
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
+
 
 }
 

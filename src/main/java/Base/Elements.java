@@ -1,13 +1,13 @@
 package Base;
 
-import Pages.LoginPage.LoginPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
 import java.util.List;
 
 
-public class Elements  {
+public class Elements {
 
 
     //Login Page elements
