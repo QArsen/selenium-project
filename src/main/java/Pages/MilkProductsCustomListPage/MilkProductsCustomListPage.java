@@ -8,9 +8,6 @@ import java.util.*;
 
 public class MilkProductsCustomListPage extends BaseClass {
 
-    public void clickOnRelevanceFilterButton() {
-        waitForElementIsPresent(Elements.relevance_filter_button).click();
-    }
 
     // doesn`t work properly(After milk selection I get all the products - not milk,  according to price filter)
     // Here I select needed filter from dropdown menu
@@ -66,7 +63,7 @@ public class MilkProductsCustomListPage extends BaseClass {
                         try {
                             element.click();
                         } catch (ElementNotInteractableException e) {
-
+                            break;
                         }
                     }
                 }

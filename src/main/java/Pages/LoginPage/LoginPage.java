@@ -2,30 +2,17 @@ package Pages.LoginPage;
 
 import Base.BaseClass;
 import Base.Elements;
+import org.openqa.selenium.WebElement;
 
 
 public class LoginPage extends BaseClass {
 
 
-
-    public LoginPage clickOnLoginLink() {
-        Elements.login_link.click();
-        return this;
-    }
-
-    public LoginPage interUserName() {
-        Elements.credentials.get(0).sendKeys(prop.getProperty("username"));
-        return this;
-    }
-
-    public LoginPage enterPassword() {
-        Elements.credentials.get(1).sendKeys(prop.getProperty("password"));
-        return this;
-    }
-
-    public LoginPage clickOnLoginButton() {
-        Elements.login_button.click();
-        return this;
+    public void loginAsValidUser(String  username, String password, WebElement element){
+        waitForElementIsPresent(Elements.login_link).click();
+        waitForElementIsPresent(Elements.credentials.get(0)).sendKeys(username);
+        waitForElementIsPresent(Elements.credentials.get(1)).sendKeys(password);
+        waitForElementIsPresent(element).click();
     }
 
     public String verifyLoggedInUserName() {

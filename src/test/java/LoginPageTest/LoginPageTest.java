@@ -1,6 +1,7 @@
 package LoginPageTest;
 
 import Base.BaseClass;
+import Base.Elements;
 import Pages.LoginPage.LoginPage;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -44,10 +45,7 @@ public class LoginPageTest extends BaseClass {
     @Parameters("test status")
     @Test
     public void loginPageTest() {
-        loginPage.clickOnLoginLink()
-                .interUserName()
-                .enterPassword()
-                .clickOnLoginButton();
+        loginPage.loginAsValidUser(prop.getProperty("username"),prop.getProperty("password"), Elements.login_button);
         Assert.assertEquals(loginPage.verifyLoggedInUserName(), "שלום ארסן");
         Assert.assertEquals(loginPage.verifyPageLogo(), "התחלת קניה ב");
     }

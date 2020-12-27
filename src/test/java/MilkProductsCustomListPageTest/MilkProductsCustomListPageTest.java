@@ -35,10 +35,6 @@ public class MilkProductsCustomListPageTest extends BaseClass {
 
     // Each step has own test
 
-    @Test(priority = 1)
-    public void clickOnRelevanceFilterButton() {
-        milkProductsCustomListPage.clickOnRelevanceFilterButton();
-    }
 
     @Test(priority = 2)
     public void selectFilterFromCheapToExpensive() {
