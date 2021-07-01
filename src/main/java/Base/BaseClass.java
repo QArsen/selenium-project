@@ -1,5 +1,6 @@
 package Base;
 
+import Logger.Log;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -7,18 +8,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 
 public class BaseClass {
 
@@ -27,42 +26,46 @@ public class BaseClass {
 
 
     public BaseClass() {
-        Elements elements = new Elements();
-        PageFactory.initElements(driver, elements);
+        driverInitialization();
     }
 
-
-    public void driverInitialization() {
+    private void driverInitialization() {
         if (driver == null) {
+            Log.info("start the Driver initialization process");
+
             try {
                 prop = new Properties();
                 String confPath = "src\\main\\java\\config\\config.properties";
                 FileInputStream ip = new FileInputStream(confPath);
                 prop.load(ip);
+                Log.debug("reading Property file");
             } catch (IOException e) {
                 e.printStackTrace();
+                Log.error("check your Property file");
             }
             if (prop.getProperty("browser").equalsIgnoreCase("ch")) {
                 WebDriverManager.chromedriver().setup();
                 System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                 driver = new ChromeDriver();
+                Log.debug("Chrome browser is opening");
                 manageDriver();
             } else {
                 if (prop.getProperty("browser").equalsIgnoreCase("ff")) {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
+                    Log.debug("FF browser is opening");
                     manageDriver();
                 } else {
                     if (prop.getProperty("browser").equalsIgnoreCase("ed")) {
                         WebDriverManager.edgedriver().setup();
                         driver = new EdgeDriver();
+                        Log.debug("Edge browser is opening");
                         manageDriver();
                     }
                 }
             }
         }
     }
-
 
     private void manageDriver() {
         driver.manage().deleteAllCookies();
@@ -71,27 +74,33 @@ public class BaseClass {
         driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
     }
 
-    public static void killWindowsProcessAfterTestFinished() throws IOException {
-        Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");
+    @AfterMethod
+    private void screenShot(ITestResult testResult) throws IOException {
+        screenShotOnFailure(testResult);
     }
 
-    public static void screenShotOnFailure(ITestResult testResult) throws IOException {
+    @AfterClass
+    public  void quit() throws IOException {
+        Log.info("quit process");
+        driver.quit();
+        Log.info("killing the driver process");
+        killWindowsProcessAfterTestFinished();
+    }
+
+    private static void killWindowsProcessAfterTestFinished() throws IOException {
+        Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe");
+        Log.debug("driver process is killed");
+    }
+
+    private static void screenShotOnFailure(ITestResult testResult) throws IOException {
         if (testResult.getStatus() == ITestResult.FAILURE) {
+            Log.info("print screen creation process, printScreen available at " + "C:\\temp\\" + testResult.getName() + "-"
+                    + Arrays.toString(testResult.getParameters()) + ".jpg");
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(scrFile, new File("C:\\temp\\" + testResult.getName() + "-"
                     + Arrays.toString(testResult.getParameters()) + ".jpg"));
         }
     }
-
-    public WebElement waitForElementIsPresent(WebElement element) {
-        WebDriverWait wait = (WebDriverWait) new WebDriverWait(driver, 15)
-                .pollingEvery(Duration.ofMillis(200))
-                .ignoring(StaleElementReferenceException.class);
-        return wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
-
-
-
 }
 
 
