@@ -1,7 +1,7 @@
 package MainTest;
 
 import Base.BaseClass;
-import Base.ElementsRepo;
+import Repos.ElementsRepo;
 import Base.ToolsManager;
 import Pages.CartPage.CustomerCartPage;
 import Pages.LoginPage.LoginPage;

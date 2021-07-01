@@ -1,9 +1,8 @@
 package Pages.MilkProductsCustomListPage;
 
 import Base.BaseClass;
-import Base.ElementsRepo;
+import Repos.ElementsRepo;
 import Base.ToolsManager;
-import Repos.ObjectsRepo;
 import org.openqa.selenium.*;
 
 import java.util.*;

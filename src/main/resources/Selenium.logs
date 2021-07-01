@@ -1,144 +1,28 @@
-2021-07-01 08:29:21 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:29:21 DEBUG Log:29 - reading Property file
-2021-07-01 08:29:23 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:30:10 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:30:10 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:30:10 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:30:11 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:30:11 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:30:16 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:30:16 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:30:16 DEBUG Log:29 - waiting for elementBy.id: js-site-search-input
-2021-07-01 08:30:17 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='allProductsTitleContainer']/button
-2021-07-01 08:30:23 DEBUG Log:29 - waiting for elementBy.xpath: //i[@class='icon icon-search']
-2021-07-01 08:30:26 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='chooseFilter']//li[@class='listView']/button
-2021-07-01 08:39:02 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='productDetails']//button[@class='btn js-add-to-cart js-enable-btn miglog-btn-add']
-2021-07-01 08:39:17 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='modal fade productModal centerModal bodyModalAppend in']//div[@class='modal-dialog']//button[@class='btnClose']
-2021-07-01 08:39:34 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:39:43 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:39:51 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='price']//span[@class='currency']
-2021-07-01 08:39:59 INFO  Log:13 - printing tests results in console
-2021-07-01 08:39:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:40:04 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:40:09 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:40:14 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:40:34 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-cart-summary-prod-wrp miglog-cart-prod-wrp']//a[@role='button']
-2021-07-01 08:40:57 INFO  Log:13 - quit process
-2021-07-01 08:40:57 INFO  Log:13 - killing the driver process
-2021-07-01 08:40:57 DEBUG Log:29 - driver process is killed
-2021-07-01 08:47:53 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:47:53 DEBUG Log:29 - reading Property file
-2021-07-01 08:47:55 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:48:12 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:48:12 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:48:12 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:48:12 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:48:12 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:48:17 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:48:17 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:48:17 DEBUG Log:29 - waiting for elementBy.id: js-site-search-input
-2021-07-01 08:48:17 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='allProductsTitleContainer']/button
-2021-07-01 08:48:21 DEBUG Log:29 - waiting for elementBy.xpath: //i[@class='icon icon-search']
-2021-07-01 08:48:23 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='chooseFilter']//li[@class='listView']/button
-2021-07-01 08:48:24 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='productDetails']//button[contains(@class,'btn js-add-to-cart')]
-2021-07-01 08:48:26 DEBUG Log:29 - waiting for elementBy.xpath: //div[contains(@class,'modal fade productModal')]//button[@class='btnClose']
-2021-07-01 08:48:27 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:48:27 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:48:28 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='price']//span[@class='currency']
-2021-07-01 08:48:28 INFO  Log:13 - printing tests results in console
-2021-07-01 08:48:28 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:48:28 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:48:28 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:48:28 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:48:28 INFO  Log:13 - quit process
-2021-07-01 08:48:29 INFO  Log:13 - killing the driver process
-2021-07-01 08:48:29 DEBUG Log:29 - driver process is killed
-2021-07-01 08:48:39 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:48:39 DEBUG Log:29 - reading Property file
-2021-07-01 08:48:42 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:48:47 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:48:47 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:48:47 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:48:47 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:48:47 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:48:53 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:48:53 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:49:08 INFO  Log:13 - quit process
-2021-07-01 08:49:09 INFO  Log:13 - killing the driver process
-2021-07-01 08:49:09 DEBUG Log:29 - driver process is killed
-2021-07-01 08:49:15 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:49:15 DEBUG Log:29 - reading Property file
-2021-07-01 08:49:17 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:49:23 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:49:23 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:49:23 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:49:23 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:49:23 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:49:27 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:49:27 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:49:27 DEBUG Log:29 - waiting for elementBy.id: js-site-search-input
-2021-07-01 08:49:28 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='allProductsTitleContainer']/button
-2021-07-01 08:49:32 DEBUG Log:29 - waiting for elementBy.xpath: //i[@class='icon icon-search']
-2021-07-01 08:49:34 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='chooseFilter']//li[@class='listView']/button
-2021-07-01 08:49:35 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='productDetails']//button[contains(@class,'btn js-add-to-cart')]
-2021-07-01 08:49:36 DEBUG Log:29 - waiting for elementBy.xpath: //div[contains(@class,'modal fade productModal')]//button[@class='btnClose']
-2021-07-01 08:49:37 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='price']//span[@class='currency']
-2021-07-01 08:49:38 INFO  Log:13 - printing tests results in console
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:49:38 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:52:37 INFO  Log:13 - quit process
-2021-07-01 08:53:07 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:53:07 DEBUG Log:29 - reading Property file
-2021-07-01 08:53:09 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:53:14 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:53:14 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:53:14 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:53:15 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:53:15 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:53:20 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:53:20 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:53:35 INFO  Log:13 - quit process
-2021-07-01 08:53:36 INFO  Log:13 - killing the driver process
-2021-07-01 08:53:36 DEBUG Log:29 - driver process is killed
-2021-07-01 08:54:08 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:54:08 DEBUG Log:29 - reading Property file
-2021-07-01 08:54:10 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:54:16 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:54:16 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:54:16 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:54:16 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:54:16 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:54:21 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:54:22 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:54:35 INFO  Log:13 - start the Driver initialization process
-2021-07-01 08:54:35 DEBUG Log:29 - reading Property file
-2021-07-01 08:54:38 DEBUG Log:29 - Chrome browser is opening
-2021-07-01 08:54:44 DEBUG Log:29 - login with user audit1551@gmail.com
-2021-07-01 08:54:44 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
-2021-07-01 08:54:44 DEBUG Log:29 - waiting for elementBy.id: j_username
-2021-07-01 08:54:44 DEBUG Log:29 - waiting for elementBy.id: j_password
-2021-07-01 08:54:44 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
-2021-07-01 08:54:48 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
-2021-07-01 08:54:48 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
-2021-07-01 08:54:48 DEBUG Log:29 - waiting for elementBy.id: js-site-search-input
-2021-07-01 08:54:49 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='allProductsTitleContainer']/button
-2021-07-01 08:54:53 DEBUG Log:29 - waiting for elementBy.xpath: //i[@class='icon icon-search']
-2021-07-01 08:54:54 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='chooseFilter']//li[@class='listView']/button
-2021-07-01 08:54:56 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='productDetails']//button[contains(@class,'btn js-add-to-cart')]
-2021-07-01 08:54:57 DEBUG Log:29 - waiting for elementBy.xpath: //div[contains(@class,'modal fade productModal')]//button[@class='btnClose']
-2021-07-01 08:54:58 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='price']//span[@class='currency']
-2021-07-01 08:54:59 INFO  Log:13 - printing tests results in console
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
-2021-07-01 08:54:59 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-cart-summary-prod-wrp miglog-cart-prod-wrp']//a[@role='button']
-2021-07-01 08:54:59 INFO  Log:13 - quit process
-2021-07-01 08:55:00 INFO  Log:13 - killing the driver process
-2021-07-01 08:55:00 DEBUG Log:29 - driver process is killed
+2021-07-01 10:11:14 INFO  Log:13 - start the Driver initialization process
+2021-07-01 10:11:14 DEBUG Log:29 - reading Property file
+2021-07-01 10:11:17 DEBUG Log:29 - Chrome browser is opening
+2021-07-01 10:11:22 DEBUG Log:29 - login with user audit1551@gmail.com
+2021-07-01 10:11:22 DEBUG Log:29 - waiting for elementBy.id: loginDropdownContainer
+2021-07-01 10:11:22 DEBUG Log:29 - waiting for elementBy.id: j_username
+2021-07-01 10:11:23 DEBUG Log:29 - waiting for elementBy.id: j_password
+2021-07-01 10:11:23 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='bottomSide']/button
+2021-07-01 10:11:27 DEBUG Log:29 - waiting for elementBy.xpath: //a[@class='info']
+2021-07-01 10:11:27 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='prefix  cartEmptyJs ']
+2021-07-01 10:11:27 DEBUG Log:29 - waiting for elementBy.id: js-site-search-input
+2021-07-01 10:11:27 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='allProductsTitleContainer']/button
+2021-07-01 10:11:31 DEBUG Log:29 - waiting for elementBy.xpath: //i[@class='icon icon-search']
+2021-07-01 10:11:33 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='chooseFilter']//li[@class='listView']/button
+2021-07-01 10:11:34 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='productDetails']//button[contains(@class,'btn js-add-to-cart')]
+2021-07-01 10:11:35 DEBUG Log:29 - waiting for elementBy.xpath: //div[contains(@class,'modal fade productModal')]//button[@class='btnClose']
+2021-07-01 10:11:36 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
+2021-07-01 10:11:37 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
+2021-07-01 10:11:37 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='price']//span[@class='currency']
+2021-07-01 10:11:37 INFO  Log:13 - printing tests results in console
+2021-07-01 10:11:37 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
+2021-07-01 10:11:38 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
+2021-07-01 10:11:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-prod-body']//p[@class='miglog-text2 miglog-prod-totalPrize ']
+2021-07-01 10:11:38 DEBUG Log:29 - waiting for elementBy.xpath: //span[@class='infoSubText']
+2021-07-01 10:11:38 DEBUG Log:29 - waiting for elementBy.xpath: //div[@class='miglog-cart-summary-prod-wrp miglog-cart-prod-wrp']//a[@role='button']
+2021-07-01 10:11:38 INFO  Log:13 - quit process
+2021-07-01 10:11:39 INFO  Log:13 - killing the driver process
+2021-07-01 10:11:39 DEBUG Log:29 - driver process is killed

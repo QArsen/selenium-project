@@ -1,7 +1,7 @@
 package Pages.CartPage;
 
 import Base.BaseClass;
-import Base.ElementsRepo;
+import Repos.ElementsRepo;
 import Base.ToolsManager;
 import Logger.Log;
 import org.openqa.selenium.By;
