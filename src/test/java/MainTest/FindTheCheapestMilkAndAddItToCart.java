@@ -13,12 +13,8 @@ import org.testng.annotations.Test;
 
 public class FindTheCheapestMilkAndAddItToCart extends BaseClass {
 
-    public FindTheCheapestMilkAndAddItToCart(){
-        super();
-    }
-
     @Test
-    public void findTheCheapestMilkAndAddItToCart()  {
+    public void findTheCheapestMilkAndAddItToCart() {
 
         //region Pre Test
 
@@ -27,7 +23,7 @@ public class FindTheCheapestMilkAndAddItToCart extends BaseClass {
         //endregion Page Title validation
 
         //region Login and user validation
-        LoginPage.loginAsValidUser(prop.getProperty("username"),prop.getProperty("password"), ElementsRepo.login_button);
+        LoginPage.loginAsValidUser(prop.getProperty("username"), prop.getProperty("password"), ElementsRepo.login_button);
         Assert.assertTrue(LoginPage.verifyElementContentAfterLogin(ElementsRepo.user_Logo, ObjectsRepo.userName));
         Assert.assertTrue(LoginPage.verifyElementContentAfterLogin(ElementsRepo.page_Logo, ObjectsRepo.defaultPageLogo));
         //endregion Login and user validation
@@ -45,13 +41,13 @@ public class FindTheCheapestMilkAndAddItToCart extends BaseClass {
         ToolsManager.clickOnElement(ElementsRepo.searching_icon);
         ToolsManager.clickOnElement(ElementsRepo.list_button);
         StoreMilkDepartment.findYourCheapestMilkInListAndClickOnIt();
-        StoreMilkDepartment.addSelectedProductToCart(ElementsRepo.add_to_cart_button,ElementsRepo.close_add_to_cart_button);
+        StoreMilkDepartment.addSelectedProductToCart(ElementsRepo.add_to_cart_button, ElementsRepo.close_add_to_cart_button);
         //endregion Finding the cheapest product
 
         //region Check your delivery and  product prices
         Assert.assertEquals(Double.sum(CustomerCartPage.getPriceFromCart(ElementsRepo.delivery_price),
                 CustomerCartPage.getPriceFromCart(ElementsRepo.milk_price)), CustomerCartPage.getTotalPriceFromCart(ElementsRepo.total_price),
-                 "Check your cart, it is the wrong price");
+                "Check your cart, it is the wrong price");
         CustomerCartPage.printTestResults();
         CustomerCartPage.removeProductFromCart(ElementsRepo.remove_product);
         //endregion Check your delivery and  product prices
